@@ -731,12 +731,28 @@ body {
   }
 }
 
-.swiper-slide .hero-anim-badge,
-.swiper-slide .hero-headline,
-.swiper-slide .hero-subtext,
-.swiper-slide .hero-anim-cta,
-.swiper-slide .hero-anim-trust,
-.swiper-slide .hero-feature-card {
+/* Fail-safe: First slide is always visible and readable even before JS or Swiper loads */
+.hero-swiper:not(.swiper-initialized) .hero-slide:not(:first-child) {
+  display: none !important;
+}
+
+.hero-slide:first-child .hero-anim-badge,
+.hero-slide:first-child .hero-headline,
+.hero-slide:first-child .hero-subtext,
+.hero-slide:first-child .hero-anim-cta,
+.hero-slide:first-child .hero-anim-trust,
+.hero-slide:first-child .hero-feature-card {
+  opacity: 1;
+  transform: none;
+}
+
+/* When Swiper initializes, animate inactive and active slides */
+.swiper-initialized .swiper-slide:not(.swiper-slide-active) .hero-anim-badge,
+.swiper-initialized .swiper-slide:not(.swiper-slide-active) .hero-headline,
+.swiper-initialized .swiper-slide:not(.swiper-slide-active) .hero-subtext,
+.swiper-initialized .swiper-slide:not(.swiper-slide-active) .hero-anim-cta,
+.swiper-initialized .swiper-slide:not(.swiper-slide-active) .hero-anim-trust,
+.swiper-initialized .swiper-slide:not(.swiper-slide-active) .hero-feature-card {
   opacity: 0;
   transform: translateY(30px);
 }

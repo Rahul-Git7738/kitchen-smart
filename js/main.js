@@ -62,11 +62,27 @@ function initKitchenSmartApp() {
   if (window.__KITCHEN_SMART_INITIALIZED__) return;
   window.__KITCHEN_SMART_INITIALIZED__ = true;
 
-  // 0. Hero Section Swiper 11 Luxury Slider
-  const heroSwiperEl = document.querySelector('.hero-swiper');
-  let heroSwiper = null;
+  // 0. Hero Section Swiper 11 Luxury Slider (Resilient polling initializer)
+  function initHeroSlider() {
+    const heroSwiperEl = document.querySelector('.hero-swiper');
+    if (!heroSwiperEl) return;
 
-  if (heroSwiperEl && typeof Swiper !== 'undefined') {
+    if (typeof Swiper === 'undefined') {
+      let attempts = 0;
+      const retryTimer = setInterval(() => {
+        attempts++;
+        if (typeof Swiper !== 'undefined') {
+          clearInterval(retryTimer);
+          initHeroSlider();
+        } else if (attempts > 50) {
+          clearInterval(retryTimer);
+        }
+      }, 50);
+      return;
+    }
+
+    if (heroSwiperEl.classList.contains('swiper-initialized')) return;
+
     const heroCurrentSlide = document.getElementById('heroCurrentSlide');
     const heroProgressFill = document.getElementById('heroProgressFill');
     const heroPillBtns = document.querySelectorAll('.hero-pill-btn');
@@ -104,7 +120,7 @@ function initKitchenSmartApp() {
       });
     }
 
-    heroSwiper = new Swiper('.hero-swiper', {
+    let heroSwiper = new Swiper('.hero-swiper', {
       loop: true,
       speed: 1000,
       effect: 'fade',
@@ -156,6 +172,8 @@ function initKitchenSmartApp() {
       resetProgress();
     });
   }
+
+  initHeroSlider();
 
   // 1. Sticky Navbar Scroll Effect
   const navbar = document.querySelector('.navbar-luxury');
