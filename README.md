@@ -37,7 +37,7 @@ Kitchen Smart/
 - **Indian Market Localization**:
   - Authentic pricing in Indian Rupees (₹ Lakhs & dynamic size estimator)
   - Climate & cooking formulation: 100% Boiling Water Resistant (BWR) Marine Plywood, HDHMR cores, anti-termite protection, and turmeric/masala stain-resistant sintered quartz
-  - Flagship Experience Studio in Mumbai (Shop no 4, Unique signature building, near GCC Circle, next to SBI atm, Kashimira, Mira Road East, Mumbai 401107) with delivery & installation across Mumbai, Delhi NCR, Bengaluru & PAN-India
+  - Flagship Experience Studio in Mumbai (Shop no 4, Unique signature building, near GCC Circle, next to SBI atm, Kashimira, Mira Road East, Mumbai 401107) with delivery & installation across Mumbai MMR, Thane, and Mira-Bhayandar
   - WhatsApp & Concierge direct contact (+91 98334 93984 / 098334 93984)
   - 14 Comprehensive Services: Modular Kitchen, Wardrobes, Interior Designer, Kitchen Design, Cabinetry & Hardware Design, Space Planning, Room Planning, Interior Architectural Design, Interior Decorating, Appliance Selection, Lighting Design, Refurbishment, Home Decor Selection, Custom Art Selection
 - **Interactive Experience**:
@@ -46,6 +46,10 @@ Kitchen Smart/
   - Filterable 2026 Collection with modal lightbox
   - Interactive 14-Services showcase with instant WhatsApp quote trigger
   - Consultation booking modal with instant WhatsApp handoff
+
+## ⚡ 1-Click Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRahul-Git7738%2Fkitchen-smart)
 
 ## 🚀 How to Run Locally
 
