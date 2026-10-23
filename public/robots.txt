@@ -1,0 +1,8 @@
+# Robots.txt for Kitchen Smart India
+# https://www.kitchensmart.in/
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.kitchensmart.in/sitemap.xml
