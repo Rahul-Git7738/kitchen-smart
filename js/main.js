@@ -1,6 +1,6 @@
 /**
  * KITCHEN SMART INDIA - Main Vanilla JS Script
- * Powers layout switcher, material studio, 2026 collection, and dynamic Indian price calculator.
+ * Powers layout switcher, material studio, 2026 collection, and interactive studio modals.
  */
 
 const STORE_WHATSAPP = '919833493984';

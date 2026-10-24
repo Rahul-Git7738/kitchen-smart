@@ -35,7 +35,7 @@ Kitchen Smart/
   - Structured JSON-LD Knowledge Graph (`HomeAndConstructionBusiness`, `LocalBusiness`, `FAQPage`, `Product`, `WebSite`, `BreadcrumbList`)
   - Semantic content, clear metrics, and authoritative citations optimized for Google AI Overviews, Perplexity AI, ChatGPT Search, and Gemini
 - **Indian Market Localization**:
-  - Authentic pricing in Indian Rupees (₹ Lakhs & dynamic size estimator)
+  - Tailored Indian home solutions & custom 3D design consultations
   - Climate & cooking formulation: 100% Boiling Water Resistant (BWR) Marine Plywood, HDHMR cores, anti-termite protection, and turmeric/masala stain-resistant sintered quartz
   - Flagship Experience Studio in Mumbai (Shop no 4, Unique signature building, near GCC Circle, next to SBI atm, Kashimira, Mira Road East, Mumbai 401107) with delivery & installation across Mumbai MMR, Thane, and Mira-Bhayandar
   - WhatsApp & Concierge direct contact (+91 98334 93984 / 098334 93984)

@@ -1050,42 +1050,6 @@ body {
   border-color: var(--ks-gold-primary);
 }
 
-/* 7. CALCULATOR */
-.calc-option-box {
-  padding: 12px;
-  border-radius: 12px;
-  background: #f8f9fc;
-  border: 1px solid var(--ks-border-subtle);
-  color: var(--ks-text-primary);
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  width: 100%;
-}
-
-.calc-option-box.active {
-  border-color: var(--ks-gold-primary);
-  background: rgba(184, 134, 11, 0.08);
-  font-weight: 600;
-}
-
-.addon-check-card {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: #f8f9fc;
-  border: 1px solid var(--ks-border-subtle);
-  border-radius: 12px;
-  padding: 12px 14px;
-  cursor: pointer;
-}
-
-.addon-check-card input[type="checkbox"] {
-  accent-color: var(--ks-gold-primary);
-  width: 18px;
-  height: 18px;
-}
-
 /* 8. FOOTER & FLOATING BAR */
 .footer-cta {
   background: #f1f4f9;
