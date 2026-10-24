@@ -120,6 +120,30 @@ function initKitchenSmartApp() {
       });
     }
 
+    function syncHeroSlideHeights() {
+      const slides = heroSwiperEl.querySelectorAll('.hero-slide');
+      if (!slides.length) return;
+      let maxHeight = 0;
+      slides.forEach(s => {
+        s.style.minHeight = '82vh';
+        s.style.height = 'auto';
+        const h = s.offsetHeight;
+        if (h > maxHeight) maxHeight = h;
+      });
+      if (maxHeight > 0) {
+        slides.forEach(s => {
+          s.style.height = maxHeight + 'px';
+        });
+        const wrapper = heroSwiperEl.querySelector('.swiper-wrapper');
+        if (wrapper) {
+          wrapper.style.height = maxHeight + 'px';
+        }
+      }
+    }
+
+    syncHeroSlideHeights();
+    window.addEventListener('resize', syncHeroSlideHeights);
+
     let heroSwiper = new Swiper('.hero-swiper', {
       loop: true,
       speed: 1000,
@@ -142,6 +166,7 @@ function initKitchenSmartApp() {
             heroCurrentSlide.textContent = String(this.realIndex + 1).padStart(2, '0');
           }
           updatePills(this.realIndex);
+          syncHeroSlideHeights();
           startProgress();
         },
         slideChange: function() {
@@ -149,6 +174,7 @@ function initKitchenSmartApp() {
             heroCurrentSlide.textContent = String(this.realIndex + 1).padStart(2, '0');
           }
           updatePills(this.realIndex);
+          syncHeroSlideHeights();
           resetProgress();
         }
       }
