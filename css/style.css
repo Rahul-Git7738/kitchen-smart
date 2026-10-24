@@ -617,10 +617,7 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right,
-      rgba(0, 0, 0, 0.97) 0%,
-      rgba(0, 0, 0, 0.92) 50%,
-      rgba(0, 0, 0, 0.42) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.97) 0%, rgb(0 0 0 / 47%) 50%, rgb(0 0 0 / 0%) 100%);
   pointer-events: none;
 }
 
