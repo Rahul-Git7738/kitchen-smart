@@ -201,6 +201,70 @@ function initKitchenSmartApp() {
 
   initHeroSlider();
 
+  // 0b. Google Reviews Swiper Slider
+  function initReviewsSlider() {
+    const reviewsSwiperEl = document.querySelector('.reviews-swiper');
+    if (!reviewsSwiperEl) return;
+
+    if (typeof Swiper === 'undefined') {
+      let attempts = 0;
+      const retryTimer = setInterval(() => {
+        attempts++;
+        if (typeof Swiper !== 'undefined') {
+          clearInterval(retryTimer);
+          initReviewsSlider();
+        } else if (attempts > 50) {
+          clearInterval(retryTimer);
+        }
+      }, 50);
+      return;
+    }
+
+    if (reviewsSwiperEl.classList.contains('swiper-initialized')) return;
+
+    new Swiper('.reviews-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      speed: 650,
+      grabCursor: true,
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      pagination: {
+        el: '.reviews-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: '.reviews-next-btn',
+        prevEl: '.reviews-prev-btn',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.25,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 28,
+        }
+      }
+    });
+  }
+
+  initReviewsSlider();
+
   // 1. Sticky Navbar Scroll Effect
   const navbar = document.querySelector('.navbar-luxury');
   if (navbar) {
