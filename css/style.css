@@ -2083,12 +2083,12 @@ img[loading="lazy"] {
 /* Reviews Swiper Slider Controls & Layout */
 .reviews-slider-wrapper {
   position: relative;
-  padding: 0 46px;
+  padding: 0 48px;
 }
 
 @media (max-width: 991.98px) {
   .reviews-slider-wrapper {
-    padding: 0 38px;
+    padding: 0 36px;
   }
 }
 
@@ -2100,7 +2100,7 @@ img[loading="lazy"] {
 
 .reviews-swiper {
   overflow: hidden;
-  padding: 10px 4px 44px 4px !important;
+  padding: 14px 6px 48px 6px !important;
 }
 
 .reviews-swiper .swiper-wrapper {
@@ -2115,11 +2115,15 @@ img[loading="lazy"] {
 .reviews-swiper .review-card {
   width: 100%;
   height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .reviews-nav-btn {
   position: absolute;
-  top: 45%;
+  top: 48%;
   transform: translateY(-50%);
   width: 44px;
   height: 44px;
@@ -2133,7 +2137,7 @@ img[loading="lazy"] {
   justify-content: center;
   font-size: 1.15rem;
   cursor: pointer;
-  z-index: 10;
+  z-index: 15;
   transition: all 0.25s ease;
 }
 
@@ -2146,11 +2150,11 @@ img[loading="lazy"] {
 }
 
 .reviews-prev-btn {
-  left: 0;
+  left: -2px;
 }
 
 .reviews-next-btn {
-  right: 0;
+  right: -2px;
 }
 
 @media (max-width: 767.98px) {
