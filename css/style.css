@@ -1930,3 +1930,152 @@ img[loading="lazy"] {
   border-radius: 3px;
   transition: width 0.3s ease;
 }
+
+/* ==========================================================================
+   GOOGLE REVIEWS & VERIFIED CLIENT TESTIMONIALS
+   ========================================================================== */
+.google-trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff;
+  border: 1px solid var(--ks-border-card);
+  border-radius: 50px;
+  padding: 10px 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.google-trust-badge .score-text {
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: #1e293b;
+  line-height: 1;
+}
+
+.google-trust-badge .stars-row {
+  color: #f59e0b;
+  font-size: 0.95rem;
+  display: inline-flex;
+  gap: 2px;
+}
+
+.review-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid var(--ks-border-card);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--ks-border-gold);
+  box-shadow: 0 18px 40px rgba(184, 134, 11, 0.12), 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.review-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.avatar-emerald { background: linear-gradient(135deg, #10b981, #059669); }
+.avatar-blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.avatar-crimson { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+.avatar-amber { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.avatar-purple { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
+.avatar-teal { background: linear-gradient(135deg, #0d9488, #0f766e); }
+
+.google-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #475569;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.review-stars {
+  color: #f59e0b;
+  font-size: 0.85rem;
+  display: inline-flex;
+  gap: 2px;
+  margin-bottom: 12px;
+}
+
+.review-quote {
+  color: #334155;
+  font-size: 0.885rem;
+  line-height: 1.65;
+  font-style: normal;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.review-author-meta {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-author-info {
+  flex-grow: 1;
+}
+
+.review-author-name {
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.review-author-loc {
+  color: #64748b;
+  font-size: 0.75rem;
+  display: block;
+}
+
+.review-project-badge {
+  display: inline-block;
+  font-size: 0.70rem;
+  font-weight: 600;
+  color: var(--ks-gold-primary);
+  background: rgba(184, 134, 11, 0.08);
+  border: 1px solid rgba(184, 134, 11, 0.2);
+  border-radius: 6px;
+  padding: 2px 7px;
+  margin-top: 5px;
+}

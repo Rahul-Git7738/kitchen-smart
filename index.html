@@ -154,11 +154,37 @@
         ],
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.9",
+          "ratingValue": "5.0",
           "bestRating": "5",
-          "ratingCount": "385",
-          "reviewCount": "385"
-        }
+          "ratingCount": "36",
+          "reviewCount": "36"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Shifa Shaikh"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Excellent work by Ashraf Shaikh and team for our modular kitchen at Lalbaug. Very professional, quality work and completed exactly on time as promised. Finishing, material quality and design are all top notch."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Junaid Khatri"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Ashraf Sir the owner of Kitchen Smart had installed my modular kitchen at Mumbai Central. He has innovative ideas, creative designing, beautiful and elegant colours for our smart kitchen."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Afshin Shaikh"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "I am very happy with my modular kitchen. The colour combination is beautiful and exactly what I wanted. The overall design and structure are excellent, and the drawers and cabinets are very well made, smooth, and easy to operate."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Mohsin Painter"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "I have done my modular kitchen from Kitchen Smart Mira Road, and they have done a wonderful job. I highly recommend taking their service, they are very professional people."
+          }
+        ]
       },
       {
         "@type": "WebSite",
@@ -287,6 +313,7 @@
                 style="font-size: 0.68rem; background: rgba(184,134,11,0.12); border: 1px solid rgba(184,134,11,0.3); border-radius: 50rem; padding: 2px 7px;">200+</span></a>
           </li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews <span class="badge bg-warning text-dark ms-1" style="font-size: 0.65rem; border-radius: 50rem;">5.0★</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#process">How It Works</a></li>
           <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
         </ul>
@@ -1955,72 +1982,234 @@
     </div>
   </section>
 
-  <!-- 11. TESTIMONIALS & ACCORDION FAQS -->
-  <section id="faqs" class="section-padding">
+  <!-- 11. GOOGLE REVIEWS & ACCORDION FAQS -->
+  <section id="reviews" class="section-padding">
     <div class="container">
       <div class="section-header">
-        <span class="badge-gold">Verified Client Experiences</span>
-        <h2>Trusted Across Mumbai's Premier Residences</h2>
-        <p>Rated 4.9/5 stars across 450+ verified residential kitchen installations in Mumbai MMR, Thane, and
-          Mira-Bhayandar.</p>
-      </div>
+        <span class="badge-gold"><i class="bi bi-google text-danger me-1"></i> Google Verified Reviews</span>
+        <h2>5.0 Star Rated on Google by Mumbai Homeowners</h2>
+        <p>Real feedback from homeowners across Mumbai MMR, Lalbaug, Mumbai Central, and Mira Road who trusted <strong>Mr. Ashraf Shaikh</strong> and the Kitchen Smart team for their dream modular kitchens.</p>
 
-      <div class="row g-4 mb-5">
-        <div class="col-md-4">
-          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
-            <div class="mb-3 text-gold">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p class="text-secondary small fst-italic mb-4">
-              "Comparing multiple modular kitchen brands in Mumbai, Kitchen Smart stood out by miles. The 3D design
-              rendered
-              our exact Bandra apartment floor plan with millimeter accuracy, and the Blum soft-close tandem drawers and
-              turmeric-proof quartz island are an absolute joy every single day."
-            </p>
-            <div class="border-top pt-3">
-              <h4 class="fw-bold text-dark small mb-0">Pooja & Rajesh Singhania</h4>
-              <span class="text-muted-ks" style="font-size: 0.72rem;">Pali Hill Penthouse, Bandra West, Mumbai</span>
+        <!-- Google Trust Score Pill -->
+        <div class="google-trust-badge">
+          <div class="d-flex align-items-center">
+            <svg class="me-2" width="22" height="22" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span class="score-text me-2">5.0</span>
+            <div class="stars-row">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
-            <div class="mb-3 text-gold">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p class="text-secondary small fst-italic mb-4">
-              "We wanted a modern British shaker in cashmere green with quartz worktops for our sea-facing apartment.
-              The team finished installation
-              in just 5 days with zero dust or mess. The BWR Marine Plywood has endured Mumbai's heavy monsoon with zero
-              issues!"
-            </p>
-            <div class="border-top pt-3">
-              <h4 class="fw-bold text-dark small mb-0">Dr. Ananya Iyer & Vikram Mehta</h4>
-              <span class="text-muted-ks" style="font-size: 0.72rem;">Worli Sea Face, Mumbai</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
-            <div class="mb-3 text-gold">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p class="text-secondary small fst-italic mb-4">
-              "World-class German precision with direct studio consultation. The 10-year anti-termite warranty,
-              HDHMR substrate, and high-gloss Italian lacquer finish gave us complete confidence."
-            </p>
-            <div class="border-top pt-3">
-              <h4 class="fw-bold text-dark small mb-0">Karthik & Sneha Narayanan</h4>
-              <span class="text-muted-ks" style="font-size: 0.72rem;">Hiranandani Estate, Thane, Mumbai</span>
-            </div>
-          </div>
+          <span class="text-secondary small border-start ps-3 d-none d-sm-inline">Based on <strong>36 Verified Google Reviews</strong></span>
+          <a href="https://www.google.com/search?q=Kitchen+Smart+Mira+Road#lrd=0x3be7b10013bada99:0x76d1bc8d6fc3fe89,1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark rounded-pill py-1 px-3 ms-sm-2">
+            <i class="bi bi-box-arrow-up-right me-1"></i> Verify on Google
+          </a>
         </div>
       </div>
+
+      <!-- Reviews Grid (6 Real Client Reviews) -->
+      <div class="row g-4 mb-4">
+        <!-- Review 1: Shifa Shaikh -->
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div>
+              <div class="review-card-header">
+                <div class="google-tag">
+                  <i class="bi bi-google text-danger"></i> Google Review
+                </div>
+                <span class="text-muted-ks" style="font-size: 0.72rem;">1 month ago</span>
+              </div>
+              <div class="review-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="review-quote">
+                "Excellent work by <strong>Ashraf Shaikh</strong> and team for our modular kitchen at Lalbaug. Very professional, quality work and completed exactly on time as promised. Finishing, material quality and design are all top notch. Very transparent pricing and smooth execution."
+              </p>
+            </div>
+            <div class="review-author-meta">
+              <div class="review-avatar avatar-emerald">S</div>
+              <div class="review-author-info">
+                <div class="review-author-name">
+                  Shifa Shaikh <i class="bi bi-patch-check-fill text-primary" title="Verified Google Reviewer"></i>
+                </div>
+                <span class="review-author-loc">Lalbaug, Mumbai</span>
+                <span class="review-project-badge">Modular Kitchen · Lalbaug</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2: Junaid Khatri -->
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div>
+              <div class="review-card-header">
+                <div class="google-tag">
+                  <i class="bi bi-google text-danger"></i> Google Review
+                </div>
+                <span class="text-muted-ks" style="font-size: 0.72rem;">Verified Customer</span>
+              </div>
+              <div class="review-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="review-quote">
+                "<strong>Ashraf Sir</strong> the owner of Kitchen Smart had installed my modular kitchen at Mumbai Central. He has innovative ideas, creative designing, beautiful and elegant colours for our smart kitchen. Everything is planned thoughtfully from sleek finishes to smooth drawer mechanisms."
+              </p>
+            </div>
+            <div class="review-author-meta">
+              <div class="review-avatar avatar-blue">J</div>
+              <div class="review-author-info">
+                <div class="review-author-name">
+                  Junaid Khatri <i class="bi bi-patch-check-fill text-primary" title="Verified Google Reviewer"></i>
+                </div>
+                <span class="review-author-loc">Mumbai Central</span>
+                <span class="review-project-badge">Modular Kitchen · Mumbai Central</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3: Afshin Shaikh -->
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div>
+              <div class="review-card-header">
+                <div class="google-tag">
+                  <i class="bi bi-google text-danger"></i> Google Review
+                </div>
+                <span class="text-muted-ks" style="font-size: 0.72rem;">Verified Customer</span>
+              </div>
+              <div class="review-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="review-quote">
+                "I am very happy with my modular kitchen. The colour combination is beautiful and exactly what I wanted. The overall design and structure are excellent, and the drawers and cabinets are very well made, smooth, and easy to operate. Highly recommended!"
+              </p>
+            </div>
+            <div class="review-author-meta">
+              <div class="review-avatar avatar-crimson">A</div>
+              <div class="review-author-info">
+                <div class="review-author-name">
+                  Afshin Shaikh <i class="bi bi-patch-check-fill text-primary" title="Verified Google Reviewer"></i>
+                </div>
+                <span class="review-author-loc">Mira Road, Mumbai</span>
+                <span class="review-project-badge">Custom Kitchen · Mira Road</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4: Mohsin Painter -->
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div>
+              <div class="review-card-header">
+                <div class="google-tag">
+                  <i class="bi bi-google text-danger"></i> Google Review
+                </div>
+                <span class="text-muted-ks" style="font-size: 0.72rem;">Verified Customer</span>
+              </div>
+              <div class="review-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="review-quote">
+                "I have done my modular kitchen from Kitchen Smart Mira Road, and they have done a wonderful job. I highly recommend taking their service, they are very professional people with great craftsmanship. Thank you Kitchen Smart!"
+              </p>
+            </div>
+            <div class="review-author-meta">
+              <div class="review-avatar avatar-teal">M</div>
+              <div class="review-author-info">
+                <div class="review-author-name">
+                  Mohsin Painter <i class="bi bi-patch-check-fill text-primary" title="Verified Google Reviewer"></i>
+                </div>
+                <span class="review-author-loc">Mira Road East</span>
+                <span class="review-project-badge">Modular Kitchen · Mira Road</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5: Aonecommonseal Seal (7-Year Longevity) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div>
+              <div class="review-card-header">
+                <div class="google-tag">
+                  <i class="bi bi-google text-danger"></i> Google Review
+                </div>
+                <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle" style="font-size: 0.70rem;">7-Year Durability</span>
+              </div>
+              <div class="review-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="review-quote">
+                "I got my kitchen done from Kitchen Smart in 2019 through <strong>Mr. Ashraf Shaikh</strong> and even today in 2026 it looks as good as new! Excellent build quality, zero issues at all. Mr. Ashraf Shaikh and his team are very professional, cooperative and reliable."
+              </p>
+            </div>
+            <div class="review-author-meta">
+              <div class="review-avatar avatar-amber">A</div>
+              <div class="review-author-info">
+                <div class="review-author-name">
+                  Aonecommonseal Seal <i class="bi bi-patch-check-fill text-primary" title="Verified Google Reviewer"></i>
+                </div>
+                <span class="review-author-loc">Mumbai (Client Since 2019)</span>
+                <span class="review-project-badge">Long-term Quality · 7 Years Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6: Zarin Shaikh -->
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div>
+              <div class="review-card-header">
+                <div class="google-tag">
+                  <i class="bi bi-google text-danger"></i> Google Review
+                </div>
+                <span class="text-muted-ks" style="font-size: 0.72rem;">Verified Customer</span>
+              </div>
+              <div class="review-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="review-quote">
+                "Smart Kitchen owned by <strong>Mr. Ashraf Shaikh</strong> has made our flat into a home, a home which we always wanted. They understood us and gave us our dream kitchen. The journey with them has been an amazing and smooth one for sure."
+              </p>
+            </div>
+            <div class="review-author-meta">
+              <div class="review-avatar avatar-purple">Z</div>
+              <div class="review-author-info">
+                <div class="review-author-name">
+                  Zarin Shaikh <i class="bi bi-patch-check-fill text-primary" title="Verified Google Reviewer"></i>
+                </div>
+                <span class="review-author-loc">Mumbai MMR</span>
+                <span class="review-project-badge">Complete Kitchen Interior</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="text-center pt-2 pb-5 border-bottom">
+        <a href="https://www.google.com/search?q=Kitchen+Smart+Mira+Road#lrd=0x3be7b10013bada99:0x76d1bc8d6fc3fe89,1" target="_blank" rel="noopener noreferrer" class="btn btn-luxury px-4 py-2 me-sm-2 mb-2 mb-sm-0">
+          <i class="bi bi-google me-2"></i> Read All 36 Reviews on Google
+        </a>
+        <a href="#consultationModal" data-bs-toggle="modal" class="btn btn-outline-dark rounded-pill px-4 py-2 mb-2 mb-sm-0">
+          <i class="bi bi-calendar-check me-2"></i> Book Free Consultation
+        </a>
+      </div>
+
+      <!-- Anchor for FAQ navigation -->
+      <div id="faqs"></div>
 
       <!-- Accordion FAQs -->
       <div class="section-header mt-5">
