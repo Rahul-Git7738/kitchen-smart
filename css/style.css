@@ -637,6 +637,23 @@ body {
     object-position: center center;
   }
 
+  /* Precise kitchen framing for tablet view */
+  .hero-bg-slide-1 {
+    object-position: 50% 35%;
+  }
+
+  .hero-bg-slide-2 {
+    object-position: 45% 45%;
+  }
+
+  .hero-bg-slide-3 {
+    object-position: 50% 35%;
+  }
+
+  .hero-bg-slide-4 {
+    object-position: 50% 25%;
+  }
+
   .hero-content {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -661,6 +678,23 @@ body {
       rgba(0, 0, 0, 0.12) 75%,
       rgba(0, 0, 0, 0.50) 100%
     );
+  }
+
+  /* Precise kitchen framing for mobile phone view */
+  .hero-bg-slide-1 {
+    object-position: 50% 38%;
+  }
+
+  .hero-bg-slide-2 {
+    object-position: 42% 48%;
+  }
+
+  .hero-bg-slide-3 {
+    object-position: 50% 38%;
+  }
+
+  .hero-bg-slide-4 {
+    object-position: 50% 20%;
   }
 
   .hero-content {
