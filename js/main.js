@@ -953,6 +953,18 @@ function initKitchenSmartApp() {
 
   // Initialize Gallery
   initGallery();
+
+  // Desktop Dropdown Click-Through Navigation
+  document.querySelectorAll('.navbar-luxury .nav-item.dropdown > a.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      if (window.innerWidth >= 1200) {
+        const href = this.getAttribute('href');
+        if (href && href !== '#' && !href.startsWith('javascript:')) {
+          window.location.href = href;
+        }
+      }
+    });
+  });
 }
 
 // Auto-run when DOM is ready or immediately if already loaded

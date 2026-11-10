@@ -2280,6 +2280,38 @@ img[loading="lazy"] {
   transform: translateX(3px);
 }
 
+
+/* Desktop Dropdown Hover */
+@media (min-width: 1200px) {
+  .navbar-luxury .dropdown {
+    position: relative;
+  }
+  .navbar-luxury .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    animation: ksDropdownFade 0.2s ease-in-out forwards;
+  }
+  .navbar-luxury .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+  }
+}
+
+@keyframes ksDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .navbar-luxury .dropdown-item.active {
   background: var(--ks-gold-primary, #b8860b);
   color: #ffffff;
@@ -2471,4 +2503,9 @@ img[loading="lazy"] {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0;
+}
+
+/* Smooth Anchor Offset for Navbar */
+#l-shaped, #straight, #u-shaped {
+  scroll-margin-top: 110px;
 }
